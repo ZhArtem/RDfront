@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+p,
+form,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-image: url('../images/Dream_TradingCard.png');
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section>a {
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+section>a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #343440;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+h2 {
+    font-family: 'Press Start 2P';
+    font-size: 64px;
+    line-height: 64px;
+    color: #343440;
+    margin-bottom: 30px;
+}
+
+span {
+    color: #FE5607;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: #343440;
+    margin-bottom: 30px;
+}
+
+.ingredients-block {
+    background: rgba(255, 255, 255, 0.3);
+    border: 6px solid #343440;
+    box-shadow: 4px 4px 0px #343440;
+    border-radius: 25px;
+
+    padding: 30px 130px;
+    margin: 30px 100px;
+    box-sizing: border-box;
+    /* display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 15px; */
+    display: flex;
+
+
+
+}
+
+ul:not(:last-child) {
+    margin-right: 140px;
+}
+
+.ingredient {
+    list-style: none;
+
+    /* border: #343440 1px solid; */
+    box-sizing: border-box;
+    /* padding: 20px 50px; */
+    margin: 10px;
+
+}
+
+input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+label {
+    box-sizing: border-box;
+    border: 3px solid transparent;
+}
+
+.custom-checkbox {
+    box-sizing: border-box;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    padding: 10px 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    color: #343440;
+}
+
+
+.custom-checkbox+label:hover {
+    cursor: pointer;
+    border: 3px solid #343440;
+    box-shadow: 2px 2px 0px #343440;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+
+    /* display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0; */
+
+    width: 4.5px;
+    height: 4.5px;
+    margin-right: 5px;
+    border-radius: 4.5px;
+    border-color: #343440;
+    background-color: #343440;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:checked+label::before {
+    background-color: #FFFFFF;
+}
+
+.custom-checkbox:checked+label {
+    background-color: #FE5607;
+    border: 3px solid #343440;
+    box-shadow: 2px 2px 0px #343440;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:disabled+label {
+    color: #9ab425;
+}
+
+
+button {
+    display: block;
+    width: 324px;
+    height: 80px;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #FE5607;
+    border: 6px solid #343440;
+    box-shadow: 4px 4px 0px #343440;
+    border-radius: 25px;
+    margin: 0 100px 79px auto;
+}
+
+
+/* MY========================== */
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #FE5607;
+    cursor: pointer;
+}
+
+
+* {
+    box-sizing: border-box;
+}

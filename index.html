@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomDessert</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="home-link" href="#"><img src="images/RD_logo.png" alt="RandomDessert logo"></a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown1()">Категория
+                    <img src="images/arrow-down-rounded.svg" alt="arrows">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <div class="categories-block">
+                        <ul class="categories-list"></ul>
+                        <ul class="categories-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown2()">Кухня
+                    <img src="images/arrow-down-rounded.svg" alt="arrows">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <div class="cuisines-block">
+                        <ul class="cuisines-list"></ul>
+                        <ul class="cuisines-list"></ul>
+                        <ul class="cuisines-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown3()">Ингредиент
+                    <img src="images/arrow-down-rounded.svg" alt="arrows">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <div class="ingredients-block">
+                        <ul class="ingredients-list"></ul>
+                        <ul class="ingredients-list"></ul>
+                        <ul class="ingredients-list"></ul>
+                    </div>
+                </div>
+            </div>
+            <a class="chat-gpt-link" href="gpt.html">ChatGPT</a>
+            <!-- <div class="star">
+                <h2>Доверь свой<br>выбор<br>НЕЙРОСЕТИ</h2>
+            </div> -->
+            <!-- <a class="star">Доверь свой<br>выбор<br>НЕЙРОСЕТИ<img src="images/Star 1.svg" alt="star"></a> -->
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main-title">
+                <img class="cross" src="images/star.svg" alt="star" width="75">
+                <h1 class="title">Random dessert</h1>
+            </div>
+            <form class="search" id="search-form" action="/">
+                <input type="text" placeholder="Рецепт, ингредиент" name="search">
+                <button class="btn" type="submit">Найти</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

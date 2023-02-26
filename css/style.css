@@ -1,0 +1,359 @@
+body {
+    margin: 21px 24px;
+    border: solid 2px #343440;
+    height: 90vh;
+    background-color: #FFF1D7;
+    background-image: url('../images/vegetables.png');
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 100px;
+    border: 1px solid #343440;
+}
+
+a {
+    padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: Arial;
+    /* border: 1px solid #343440; */
+    position: relative;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    flex-basis: 20%;
+    flex-grow: 1;
+    color: #343440;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    flex-basis: 20%;
+    flex-grow: 1;
+    height: 100%;
+    /* 
+    overflow: hidden; */
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #343440;
+    border-bottom: none;
+
+    font-size: 16px;
+    outline: none;
+    color: #343440;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+    background-color: #FFF9ED;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* right: 20%; */
+    /* min-width: 80%; */
+    /* right: 1px; */
+    background-color: #FFF9ED;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.show {
+    display: block;
+}
+
+.chat-gpt-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #F5BE42;
+    border: 1px solid #343440;
+    box-shadow: 3px 4px 0px #343440;
+}
+
+
+.star {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    background-image: url("../images/Star\ 1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    /* animation: myAnim 3s ease 0s infinite normal forwards; */
+}
+
+.star h2 {
+    /* height: 150px; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    text-transform: uppercase;
+
+    color: #343440;
+
+    transform: rotate(-16.06deg);
+}
+
+
+/* =main====================================================================== */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    display: flex;
+    margin-top: 47px;
+    margin-bottom: 27px;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #343440;
+    margin-left: 10px;
+}
+
+.search {
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.search input {
+    padding-left: 72px;
+    width: 690px;
+    /* height: 80px; */
+    height: 100%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #343440;
+    box-shadow: 4px 4px 0px #343440;
+    margin-right: 19px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* color: #707070; */
+    outline: none;
+}
+
+.search button {
+    width: 216px;
+    height: 80px;
+
+    background: #F5BE42;
+    border: 2px solid #343440;
+    box-shadow: 4px 4px 0px #343440;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: capitalize;
+
+    color: #343440;
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+@keyframes myAnim {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ====ingred=================================================================== */
+
+.ingredients-block,
+.cuisines-block,
+.categories-block {
+    width: 100%;
+    background: #FFF9ED;
+    box-shadow: 4px 4px 0px #343440;
+    /* border-radius: 25px; */
+
+    /* padding: 30px 130px;
+    margin: 30px 100px; */
+    box-sizing: border-box;
+    /* display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 15px; */
+    display: flex;
+
+
+
+}
+
+/* ul:not(:last-child) {
+    margin-right: 140px;
+} */
+
+.category,
+.ingredient,
+.cuisine {
+    list-style: none;
+
+    /* border: #343440 1px solid; */
+    box-sizing: border-box;
+    /* padding: 20px 50px; */
+    margin: 10px;
+
+}
+
+.ingredient>input,
+.cuisine>input,
+.category>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+label {
+    box-sizing: border-box;
+    border: 3px solid transparent;
+}
+
+.custom-checkbox {
+    box-sizing: border-box;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    padding: 10px 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    color: #343440;
+}
+
+
+.custom-checkbox+label:hover {
+    cursor: pointer;
+    border: 3px solid #343440;
+    box-shadow: 2px 2px 0px #343440;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+
+    /* display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0; */
+
+    width: 4.5px;
+    height: 4.5px;
+    margin-right: 5px;
+    border-radius: 4.5px;
+    border-color: #343440;
+    background-color: #343440;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:checked+label::before {
+    background-color: #FFFFFF;
+}
+
+.custom-checkbox:checked+label {
+    background-color: #FE5607;
+    border: 3px solid #343440;
+    box-shadow: 2px 2px 0px #343440;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox:disabled+label {
+    color: #9ab425;
+}
