@@ -1,7 +1,9 @@
 body {
     margin: 21px 24px;
     border: solid 2px #343440;
-    height: 90vh;
+    /* outline: solid 1px #343440;
+    outline-offset: -20px; */
+    height: 95vh;
     background-color: #FFF1D7;
     background-image: url('../images/vegetables.png');
     background-position-y: bottom;
@@ -10,7 +12,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 93px;
     border: 1px solid #343440;
 }
 
@@ -18,7 +20,6 @@ a {
     padding: 0;
 }
 
-/* Navbar container */
 .navbar {
     /* overflow: hidden; */
     display: flex;
@@ -29,12 +30,12 @@ a {
     position: relative;
 }
 
-
-/* Links inside the navbar */
 .navbar a {
     float: left;
     flex-basis: 20%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
     color: #343440;
     font-style: normal;
     font-weight: 600;
@@ -45,22 +46,20 @@ a {
     text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
     float: left;
     flex-basis: 20%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     height: 100%;
     /* 
     overflow: hidden; */
 
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
     padding: 0;
     width: 100%;
-    height: 100px;
+    height: 93px;
     border: 1px solid #343440;
     border-bottom: none;
 
@@ -74,9 +73,7 @@ a {
     /* padding: 14px 16px; */
     background-color: inherit;
     font-family: inherit;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
     cursor: pointer;
 }
 
@@ -88,14 +85,33 @@ a {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     /* right: 20%; */
     /* min-width: 80%; */
     /* right: 1px; */
     background-color: #FFF9ED;
-    min-width: 160px;
+    /* min-width: 160px; */
     /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     z-index: 1;
+}
+
+.categories-block,
+.cuisines-block,
+.ingredients-block {
+    position: absolute;
+    right: 20%;
+    left: 0;
+    /* top: 101px; */
+    /* width: 100%; */
+    background: #FFF9ED;
+    box-shadow: 4px 4px 0px #343440;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories-block {
+    left: 20%;
 }
 
 .rotate {
@@ -247,26 +263,10 @@ a {
 
 /* ====ingred=================================================================== */
 
-.ingredients-block,
-.cuisines-block,
-.categories-block {
-    width: 100%;
-    background: #FFF9ED;
-    box-shadow: 4px 4px 0px #343440;
-    /* border-radius: 25px; */
-
-    /* padding: 30px 130px;
-    margin: 30px 100px; */
-    box-sizing: border-box;
-    /* display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(7, auto);
-    gap: 15px; */
-    display: flex;
 
 
 
-}
+
 
 /* ul:not(:last-child) {
     margin-right: 140px;
@@ -290,12 +290,12 @@ a {
     position: absolute;
     z-index: -1;
     opacity: 0;
-
 }
 
 label {
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
+
 }
 
 .custom-checkbox {
@@ -320,19 +320,17 @@ label {
 
 .custom-checkbox+label:hover {
     cursor: pointer;
-    border: 3px solid #343440;
-    box-shadow: 2px 2px 0px #343440;
-    border-radius: 6px;
+
+    /* box-shadow: 2px 2px 0px #343440; */
+    /* border-radius: 6px; */
     box-sizing: border-box;
+
+    background: #FFE5B6;
+    border: 2px solid #343440;
 }
 
 .custom-checkbox+label::before {
     content: '';
-
-    /* display: inline-block;
-    flex-shrink: 0;
-    flex-grow: 0; */
-
     width: 4.5px;
     height: 4.5px;
     margin-right: 5px;
@@ -347,10 +345,10 @@ label {
 }
 
 .custom-checkbox:checked+label {
-    background-color: #FE5607;
-    border: 3px solid #343440;
-    box-shadow: 2px 2px 0px #343440;
-    border-radius: 6px;
+    background: #FFE5B6;
+    border: 2px solid #343440;
+    /* box-shadow: 2px 2px 0px #343440; */
+    /* border-radius: 6px; */
     box-sizing: border-box;
 }
 
