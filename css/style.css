@@ -4,8 +4,13 @@ body {
     /* outline: solid 1px #343440;
     outline-offset: -20px; */
     height: 95vh;
+    /* max-width: 1400px;
+    margin: 21px auto; */
+    /* justify-content: center; */
     background-color: #FFF1D7;
     background-image: url('../images/vegetables.png');
+    /* background-size: auto; */
+    /* background-size: ; */
     background-position-y: bottom;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -132,13 +137,16 @@ a {
     box-shadow: 3px 4px 0px #343440;
 }
 
+.chat-gpt-link>img {
+    margin-left: 8px;
+}
 
 .star {
     height: 200px;
     width: 200px;
     position: absolute;
-    right: 50px;
-    top: 50px;
+    right: 40px;
+    top: 70px;
     background-image: url("../images/Star\ 1.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,6 +154,7 @@ a {
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-position: center;
+    user-select: none;
 
 
     /* animation: myAnim 3s ease 0s infinite normal forwards; */
@@ -331,10 +340,10 @@ label {
 
 .custom-checkbox+label::before {
     content: '';
-    width: 4.5px;
-    height: 4.5px;
+    width: 9px;
+    height: 9px;
     margin-right: 5px;
-    border-radius: 4.5px;
+    border-radius: 50%;
     border-color: #343440;
     background-color: #343440;
     box-sizing: border-box;

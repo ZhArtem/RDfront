@@ -31,12 +31,12 @@ function checkboxLimit() {
             counter++
         }
     }
-    const error = document.querySelector(".error")
+    // const error = document.querySelector(".error")
     if (counter > LIMIT_CHECKBOX) {
         // alert(`Выберете не более ${LIMIT_CHECKBOX} ингредиентов`);
-        error.textContent = `Выберете не более ${LIMIT_CHECKBOX} ингредиентов!!!`
+        // error.textContent = `Выберете не более ${LIMIT_CHECKBOX} ингредиентов!!!`
         return false
     } else {
-        error.textContent = '';
+        // error.textContent = '';
     }
 }

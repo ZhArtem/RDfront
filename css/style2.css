@@ -30,6 +30,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    /* height: 100vh; */
 }
 
 h1,
@@ -43,10 +44,12 @@ li {
 }
 
 section {
+    /* position: relative; */
     background-image: url('../images/Dream_TradingCard.png');
     background-size: cover;
     background-attachment: fixed;
-    /* height: 100%; */
+    height: 100%;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +59,15 @@ section {
 section>a {
     text-decoration: none;
     align-self: flex-start;
+}
+
+.logo {
+    width: 173px;
+    margin-top: 25px;
+    margin-left: 41px;
+    /* position: absolute;
+    left: 41px;
+    top: 25px; */
 }
 
 section>a:hover {
@@ -79,7 +91,7 @@ h2 {
 }
 
 span {
-    color: #FE5607;
+    color: #fff;
 }
 
 p {
@@ -90,17 +102,16 @@ p {
     line-height: 34px;
     text-transform: capitalize;
     color: #343440;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .ingredients-block {
-    background: rgba(255, 255, 255, 0.3);
-    border: 6px solid #343440;
+    background: rgba(255, 241, 215, 0.62);
+    border: 3px solid #343440;
     box-shadow: 4px 4px 0px #343440;
-    border-radius: 25px;
 
     padding: 30px 130px;
-    margin: 30px 100px;
+    margin: 0 100px 30px;
     box-sizing: border-box;
     /* display: grid;
     grid-template-columns: repeat(3, auto);
@@ -135,7 +146,7 @@ input {
 
 label {
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .custom-checkbox {
@@ -160,9 +171,9 @@ label {
 
 .custom-checkbox+label:hover {
     cursor: pointer;
-    border: 3px solid #343440;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #343440;
     box-shadow: 2px 2px 0px #343440;
-    border-radius: 6px;
     box-sizing: border-box;
 }
 
@@ -173,10 +184,10 @@ label {
     flex-shrink: 0;
     flex-grow: 0; */
 
-    width: 4.5px;
-    height: 4.5px;
+    width: 9px;
+    height: 9px;
     margin-right: 5px;
-    border-radius: 4.5px;
+    border-radius: 50%;
     border-color: #343440;
     background-color: #343440;
     box-sizing: border-box;
@@ -188,9 +199,9 @@ label {
 
 .custom-checkbox:checked+label {
     background-color: #FE5607;
-    border: 3px solid #343440;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #343440;
     box-shadow: 2px 2px 0px #343440;
-    border-radius: 6px;
     box-sizing: border-box;
 }
 
@@ -202,18 +213,21 @@ label {
 button {
     display: block;
     width: 324px;
-    height: 80px;
+    height: 70px;
+    left: 969px;
+    top: 647px;
+
+    background: #F5BE42;
+    border: 2px solid #343440;
+    box-shadow: 4px 4px 0px #343440;
+
     font-family: 'Press Start 2P';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     text-transform: capitalize;
-    color: #FFFFFF;
-    background-color: #FE5607;
-    border: 6px solid #343440;
-    box-shadow: 4px 4px 0px #343440;
-    border-radius: 25px;
+    color: #403434;
     margin: 0 100px 79px auto;
 }
 
@@ -222,7 +236,6 @@ button {
 
 button:hover {
     background-color: #FFFFFF;
-    color: #FE5607;
     cursor: pointer;
 }
 
