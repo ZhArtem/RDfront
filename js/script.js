@@ -73,13 +73,15 @@ const cuisines = [
     ['Средиземноморская', 'Турецкая', 'Тайская', 'Узбекская', 'Украинская', 'Французская', 'Японская']
 ];
 
+
+
 const cuisinesListNodes = document.querySelectorAll('.cuisines-list');
 for (let i = 0; i < cuisinesListNodes.length; i++) {
     let cuisinesUl = '';
     for (let j = 0; j < cuisines[i].length; j++) {
         let cuisine = `
             <li class="cuisine">
-                <input type="checkbox" class="custom-checkbox" name="cuisine${i}${j}" id="cuisine${i}${j}" form="search-form">
+                <input type="checkbox" class="custom-checkbox" name="cuisine${i}${j}" id="cuisine${i}${j}" form="search-form" value=${cuisines[i][j]}>
                 <label for="cuisine${i}${j}">${cuisines[i][j]}</label>
             </li>
         `

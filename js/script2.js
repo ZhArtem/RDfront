@@ -4,6 +4,7 @@ const ingredients = [
     ['Картофель', 'Рис', 'Макароны', 'Яйца', 'Молоко', 'Сыр', 'Сметана']
 ];
 
+
 const ingredientsListNodes = document.querySelectorAll('.ingredients-list');
 for (let i = 0; i < ingredientsListNodes.length; i++) {
     let ingreds = '';

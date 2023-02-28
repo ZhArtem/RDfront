@@ -141,47 +141,37 @@ a {
     margin-left: 8px;
 }
 
-.star {
-    height: 200px;
+
+.circle {
     width: 200px;
+    height: 200px;
     position: absolute;
     right: 40px;
-    top: 70px;
-    background-image: url("../images/Star\ 1.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    background-origin: padding-box;
-    background-repeat: no-repeat;
-    background-position: center;
-    user-select: none;
-
-
-    /* animation: myAnim 3s ease 0s infinite normal forwards; */
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.star h2 {
-    /* height: 150px; */
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.circle__title {
+    /* position: absolute; */
+    z-index: 1;
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
     text-transform: uppercase;
-
     color: #343440;
+    transform: rotate(16.06deg);
+    user-select: none;
+}
 
-    transform: rotate(-16.06deg);
+.circle__image {
+    position: absolute;
+    /* animation: myAnim 3s ease 0s infinite normal forwards; */
+    animation: Anim_Rotate_Center 20s linear 0s infinite normal forwards;
 }
 
 
@@ -208,6 +198,10 @@ a {
     text-transform: uppercase;
     color: #343440;
     margin-left: 10px;
+}
+
+.cross {
+    /* animation: Anim_Pulse_Ping 2s ease 0s infinite normal forwards; */
 }
 
 .search {
@@ -269,6 +263,33 @@ a {
     }
 }
 
+@keyframes Anim_Pulse_Ping {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.2);
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.2);
+    }
+}
+
+
+@keyframes Anim_Rotate_Center {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* ====ingred=================================================================== */
 
@@ -364,3 +385,6 @@ label {
 .custom-checkbox:disabled+label {
     color: #9ab425;
 }
+
+
+/* ================================================= */
