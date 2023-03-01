@@ -170,7 +170,6 @@ a {
 
 .circle__image {
     position: absolute;
-    /* animation: myAnim 3s ease 0s infinite normal forwards; */
     animation: Anim_Rotate_Center 20s linear 0s infinite normal forwards;
 }
 
@@ -198,10 +197,6 @@ a {
     text-transform: uppercase;
     color: #343440;
     margin-left: 10px;
-}
-
-.cross {
-    /* animation: Anim_Pulse_Ping 2s ease 0s infinite normal forwards; */
 }
 
 .search {
@@ -250,34 +245,6 @@ a {
 
 .btn {
     cursor: pointer;
-}
-
-
-@keyframes myAnim {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes Anim_Pulse_Ping {
-    0% {
-        opacity: 0.8;
-        transform: scale(0.2);
-    }
-
-    80% {
-        opacity: 0;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(2.2);
-    }
 }
 
 

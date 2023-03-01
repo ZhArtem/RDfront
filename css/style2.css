@@ -44,10 +44,12 @@ li {
 }
 
 section {
-    /* position: relative; */
     background-image: url('../images/Dream_TradingCard.png');
     background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     /* height: 100vh; */
     display: flex;
@@ -129,10 +131,7 @@ ul:not(:last-child) {
 
 .ingredient {
     list-style: none;
-
-    /* border: #343440 1px solid; */
     box-sizing: border-box;
-    /* padding: 20px 50px; */
     margin: 10px;
 
 }
@@ -238,7 +237,6 @@ button:hover {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-
 
 * {
     box-sizing: border-box;
